@@ -1,0 +1,139 @@
+<html>
+
+<head>
+  <title>Portland Press Hotel</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="content-slider">
+    <button id="book-now" class="book-now">BOOK NOW</button>
+    <div class="header">
+      <p class="companyname">PORTLAND, MAINE</p>
+      <img class="logo" src="images/Logo.png">
+    </div>
+
+    <div id="slider">
+      <ul id="slideWrap">
+        <li><img src="images/Slider1.jpg" alt=""></li>
+        <li><img src="images/Slider2.jpg" alt=""></li>
+        <li><img src="images/Slider3.jpg" alt=""></li>
+        <li><img src="images/Slider4.jpg" alt=""></li>
+      </ul>
+      <a id="prev" href="#">&#8810;</a>
+      <a id="next" href="#">&#8811;</a>
+    </div>
+
+    <div class="text-slider">
+      <h1 class="title-history">HISTORY IN THE MAKING</h1>
+      <h2 class="subtitle-history">Portland's newest boutique hotel</h2>
+      <p class="description-hostory">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, omnis porro est voluptates
+        voluptatibus commodi in itaque possimus error aut? Quaerat, corporis? Dolores doloribus quos, facere
+        voluptatem nam delectus voluptates.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ipsam id consequatur doloribus, consectetur
+        officiis maiores optio praesentium ad dolor. Ea fugiat modi in inventore perspiciatis animi, porro voluptatum
+        eveniet? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae accusantium animi, est rem esse
+        quibusdam assumenda sunt! Quis voluptates iste natus culpa. 
+      </p>
+    </div>
+  </div>
+  <!--modal book-now -->
+  <dialog id="modal" class="modal">
+    <form action="data.php">
+    <div class="modal-container" id="modal-container">
+      <h1 id="close-popup">x</h1>
+      <h1 class="modal-title">BOOK NOW</h1>
+      <label id="arrival">ARRIVAL DATE</label>
+      <input type="date" class="arrival" required><br><br>
+      <label id="departure">DEPARTURE DATE</label>
+      <input type="date" class="departure" required><br>
+      <label id="guests">GUESTS</label><br>
+      <select name="adult" class="gts">
+        <option value="value1" selected>1 adult</option>
+        <option value="value2" >1 Adults</option>
+        <option value="value3">2 Adults</option>
+        <option value="value3">4 Adults</option>
+      </select>
+      <select name="child" class="gts">
+        <option value="value1" selected>0 child</option>
+        <option value="value2" >1 children</option>
+        <option value="value3">2 children</option>
+        <option value="value3">3 children</option><br>
+      </select>
+      <p id="get-ready">GET READY! You are about to get our best price. Guaranteed.</p>
+      <input type="submit" id="lets-go" value="LET'S GO"> </input><br>
+      <a id="book-group">OR, BOOK YOUR GROUP → </a>
+    </div>
+    </form>
+  </dialog>
+
+  <!-- ACCOMMODATIONS AREA -->
+  <div class="container-accommodations">
+    <div class="colum1">
+      <h2 class="Pretitle">ACCOMMODATIONS</h2>
+      <H1 class="Title">HOLLYWOOD, MEET <br> INDUSTRIAL CHIC</H1>
+      <P class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium accusamus, dolore quam aliquid
+        animi placeat omnis aut est perspiciatis provident ex, ratione pariatur adipisci, facilis deleniti nam illum a
+        dicta.</P>
+      <button class="btn">VIEW ROMS</button>
+    </div>
+    <div class="colum2">
+      <img class="room" src="images/Room.jpg">
+    </div>
+  </div>
+  <!-- END ACCOMMODATIONS AREA -->
+
+  <!-- EVENTS AREA -->
+  <h2 id="title-events">THIS MONTH'S MOST ANTICIPATED EVENTS</h2>
+  <div class="container-events">
+    <div class="event event1">
+      <div class="date">
+        <h4 class="Number-date">8</h4>
+        <p class="Month-date">NOV</p>
+      </div>
+    </div>
+    <div class="event event2">
+      <div class="date">
+        <h4 class="Number-date">16</h4>
+        <p class="Month-date">NOV</p>
+      </div>
+    </div>
+    <div class="event event3">
+      <div class="date">
+        <h4 class="Number-date">2</h4>
+        <p class="Month-date">NOV</p>
+      </div>
+    </div>
+    <div class="event event4">
+      <div class="date">
+        <h4 class="Number-date">3</h4>
+        <p class="Month-date">NOV</p>
+      </div>
+    </div>
+  </div>
+  <!-- END EVENTS AREA -->
+  <!-- FOOTER AREA -->
+  <div class="footer-container">
+    <div class="footer-colum1">
+      <p>390 Congress St. (at Congress & Exchange Streets), Portland, · Maine MAP ></p>
+    </div>
+    <div class="footer-colum2">
+      <p>(207) 653 99 90 · info@portlandpresshotel.com</p>
+    </div>
+  </div>
+  <!-- END FOOTER AREA -->
+
+  <script src="Js/modal.js"></script>
+  <script src="Js/slider.js"></script>
+</body>
+
+</html>
